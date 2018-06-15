@@ -40,6 +40,7 @@ class SingleLinkList(object):
             cur = cur.next
 
     def add(self, data):
+        """头插法"""
         # 在头部创建一个新节点
         # 1.创建一个新节点
         # 2.将新指针指向之前的头节点所对应的链接域
@@ -124,9 +125,3 @@ if __name__ == '__main__':
     print("链表长度为:{}".format(li.length()))
     li.travel()
     print(li.search(3))
-
-
-
-
-
-
