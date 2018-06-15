@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冒泡排序</title>
+    <script>
+        function bubble() {
+            var aNumber = [1, 32, 12, 54, 46, 554, 334, 2000423];
+            var iNum = 0;
+            for (var i=0; i<=aNumber.length-1; i++) {
+                for (var j=0; j<=(aNumber.length-i+1); j++) {
+                    if (aNumber[j] > aNumber[j+1]) {
+                        iNum = aNumber[j];
+                        aNumber[j] = aNumber[j+1];
+                        aNumber[j+1] = iNum;
+                    }
+                }
+            }
+            alert(aNumber.toString());
+        }
+    </script>
+</head>
+<body>
+    <h1>冒泡法排序</h1>
+    <input type="button" value="冒泡一下" onclick="bubble()">
+</body>
+
+</html>
